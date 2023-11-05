@@ -1,0 +1,138 @@
+.hero {
+
+    padding: 192px 0 167px;
+    position: relative;
+
+    @include laptop {
+        padding: 130px 0 0px;
+        overflow: hidden;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        width: 956px;
+        height: 944px;
+        background: url(../images/BG-illustrate.svg) no-repeat;
+        background-size: contain;
+        z-index: -1;
+
+        @include laptop {
+            right: auto;
+            top: auto;
+            bottom: 0;
+            left: 25px;
+            background-size: auto;
+            scale: -1 1;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include laptop {
+            align-items: center;
+        }
+    }
+
+    &__suptitle {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.56px;
+
+        @include mobile {
+            font-size: 24px;
+            letter-spacing: -0.48px;
+            text-align: center;
+        }
+
+    }
+
+    &__title {
+        max-width: 850px;
+        margin: 32px 0 56px;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 94.8%;
+        letter-spacing: -5.6px;
+        text-wrap: balance;
+        position: relative;
+
+        @include laptop {
+            text-align: center;
+            font-size: 70px;
+            max-width: none;
+        }
+
+        @include tablet {
+            font-size: 55px;
+        }
+
+        @include mobile {
+            margin: 29px 0;
+            font-size: 40px;
+            letter-spacing: -2.8px;
+        }
+
+        @include phone {
+            font-size: 9.5vw;
+        }
+
+        & img {
+            display: inline-block;
+            margin-left: 15px;
+            height: 50px;
+
+            @include laptop {
+                height: 45px;
+            }
+
+            @include tablet {
+                height: 40px;
+            }
+
+            @include mobile {
+                height: 25px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 640px;
+        font-size: 22px;
+        line-height: 145%;
+        letter-spacing: -0.77px;
+
+        @include laptop {
+            text-align: center;
+        }
+
+        @include mobile {
+            font-size: 16px;
+            max-width: none;
+            letter-spacing: -0.56px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: -111px;
+
+        @include laptop {
+            position: relative;
+            bottom: 0;
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}

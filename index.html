@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getcall</title>
+    <link rel="icon" type="image/png" href="/assets/images/logo.png" />
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/slick-theme.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                    getcall
+                </a>
+                <div class="navigation">
+                    <a href="https://calendly.com/getcall/getcall-konsultacija?month=2023-11" class="button">
+                        Užsiregistruoti konsultacijai
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_94_750)">
+                                <path d="M0.75 9L14.25 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 14.25L14.25 9L9 3.75" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_94_750">
+                                    <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 18 0)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <nav class="header__nav" id="kontaktai">
+                        <h5 class="header__nav--title">Kontaktai</h5>
+                        <ul class="header__list">
+                            <li class="header__list--item">
+                                <a href="mailto:info@getcall.lt" class="header__list--link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.75708 2.5H12.2598C12.9473 2.5 13.5098 3.0625 13.5098 3.75V11.25C13.5098 11.9375 12.9473 12.5 12.2598 12.5H2.75708C2.06958 12.5 1.50708 11.9375 1.50708 11.25V3.75C1.50708 3.0625 2.06958 2.5 2.75708 2.5Z"
+                                            stroke="#131344" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.5 3.75L7.5 8.125L1.5 3.75" stroke="#131344" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    info@getcall.lt
+                                </a>
+                            </li>
+                            <li class="header__list--item">
+                                <a href="tel:+370 668 33144" class="header__list--link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7499 10.575V12.45C13.7506 12.6241 13.7149 12.7964 13.6452 12.9558C13.5755 13.1153 13.4732 13.2585 13.3449 13.3762C13.2167 13.4938 13.0653 13.5834 12.9004 13.6392C12.7355 13.695 12.5608 13.7157 12.3874 13.7C10.4642 13.491 8.61677 12.8338 6.99365 11.7812C5.48354 10.8217 4.20323 9.54136 3.24365 8.03125C2.18738 6.40075 1.53005 4.54437 1.3249 2.6125C1.30928 2.43967 1.32982 2.26547 1.38521 2.10101C1.4406 1.93655 1.52963 1.78543 1.64663 1.65726C1.76362 1.5291 1.90603 1.42669 2.06477 1.35658C2.22351 1.28646 2.39511 1.25016 2.56865 1.25H4.44365C4.74696 1.24701 5.04102 1.35442 5.271 1.55221C5.50098 1.74999 5.6512 2.02465 5.69365 2.325C5.77279 2.92504 5.91955 3.5142 6.13115 4.08125C6.21524 4.30495 6.23344 4.54807 6.18359 4.7818C6.13374 5.01553 6.01794 5.23007 5.8499 5.4L5.05615 6.19375C5.94587 7.75847 7.24143 9.05403 8.80615 9.94375L9.5999 9.15C9.76983 8.98196 9.98437 8.86616 10.2181 8.81631C10.4518 8.76646 10.6949 8.78466 10.9186 8.86875C11.4857 9.08034 12.0749 9.22711 12.6749 9.30625C12.9785 9.34908 13.2558 9.502 13.454 9.73593C13.6522 9.96986 13.7575 10.2685 13.7499 10.575Z"
+                                            stroke="#131344" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    +370 668 33144
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="header__nav" id="navigacija">
+                        <h5 class="header__nav--title">Navigacija</h5>
+                        <ul class="header__list">
+                            <li class="header__list--item">
+                                <a href="#" class="header__list--link" data-scroll="#hero">
+                                    Pagrindinis
+                                </a>
+                            </li>
+                            <li class="header__list--item">
+                                <a href="/about.html" class="header__list--link">
+                                    Apie mus
+                                </a>
+                            </li>
+                            <li class="header__list--item">
+                                <a href="tel:+370 668 33144" class="header__list--link">
+                                    Susisiekite
+                                </a>
+                            </li>
+                            <li class="header__list--item">
+                                <a href="/" class="header__list--link" data-scroll="#faq">
+                                    DUK
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="tel:+370 668 33144" class="header__button">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_89_99)">
+                                <path
+                                    d="M14.4458 10.2889L11.2671 8.92604C10.8926 8.764 10.4535 8.87328 10.1992 9.18913L8.90749 10.7659C6.87868 9.76979 5.23073 8.12009 4.23464 6.09304L5.8111 4.8028C6.12604 4.54555 6.23327 4.10876 6.07401 3.73434L4.71141 0.555634C4.53288 0.148114 4.09325 -0.074835 3.66288 0.0250673L0.709754 0.70622C0.292274 0.801435 0.000183105 1.16911 0.000183105 1.5986C0.000183105 8.9902 6.0119 15.0019 13.4035 15.0019C13.8333 15.0019 14.1998 14.7099 14.2956 14.2924L14.9767 11.3392C15.0754 10.91 14.8531 10.4647 14.4458 10.2889Z"
+                                    fill="#131344" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_89_99">
+                                    <rect width="15" height="15" fill="white" transform="matrix(-1 0 0 1 15 0)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        +370 668 33144
+                    </a>
+                </div>
+                <button class="header__burger"><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <span class="hero__suptitle">Šalti skambučiai Getcall</span>
+                    <h1 class="hero__title">
+                        Skambučius paverčiame pinigais<img src="assets/images/money2.png" alt="money">
+                    </h1>
+                    <p class="hero__text">Siūlome nuoseklius ir motyvuotus šaltus skambučius padėsiančius sugeneruoti
+                        daugiau
+                        nekilnojamojo turto sandorių</p>
+                    <a href="https://calendly.com/getcall/getcall-konsultacija?month=2023-11" class="button">
+                        Užsiregistruoti konsultacijai
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_94_750)">
+                                <path d="M0.75 9L14.25 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 14.25L14.25 9L9 3.75" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_94_750">
+                                    <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 18 0)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <img class="hero__img" src="assets/images/keyfolder.svg" alt="keyfolder">
+                </div>
+            </div>
+        </section>
+        <section class="statistics">
+            <div class="container">
+                <h2 class="section__title">Šaltų skambučių galia</h2>
+                <p class="statistics__text">Kai ieškote potencialių klientų, niekas neprilygsta tiesioginiam bendravimui
+                    su tikru asmeniu.</p>
+                <ul class="statistics__list">
+                    <li class="statistics__item">
+                        <span class="statistics__item--num">75%</span>
+                        <p class="statistics__item--text">Potencialių klientų sutinka tolimesniam bendravimui tik po 2-4
+                            skambučio</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__item--num">96%</span>
+                        <p class="statistics__item--text">Kartų skambindami jūs išgirsite NE</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__item--num">15%</span>
+                        <p class="statistics__item--text">Tik tiek pardavėjų susisiekia su potencialiu klientu antrą
+                            kartą</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__item--num">85%</span>
+                        <p class="statistics__item--text">Dagiau nei 85% nekilnojamo turto agentų nemėgsta, nedrįsta ir
+                            vengia
+                            šaltų skambučių</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <h2 class="section__title">Kaip mes dirbame?</h2>
+                <ul class="work__list">
+                    <li class="work__item">
+                        <img class="work__img" src="assets/images/work/seo1.svg" alt="">
+                        <h3 class="work__title">Sekame rinką</h3>
+                        <p class="work__text">Nuolat sekame rinką ir populiariausius nekilnojamo turto skelbimų
+                            portalus.</p>
+                    </li>
+                    <li class="work__item">
+                        <img class="work__img" src="assets/images/work/Group2.svg" alt="">
+                        <h3 class="work__title">Nuosekliai skambiname</h3>
+                        <p class="work__text">Pasirodžius naujiems skelbimams susisiekiame su nekilnojamo turto
+                            pardavėjais. Atliekame pakartotinus skambučius iki 5 kartų susidomėjusiems asmenims!</p>
+                    </li>
+                    <li class="work__item">
+                        <img class="work__img" src="assets/images/work/group3.svg" alt="">
+                        <h3 class="work__title">Informuojame</h3>
+                        <p class="work__text">Informuojame jus asmeniškai apie sutartus susitikimus iškart po atlikto
+                            sėkmingo skambučio.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="goal">
+            <div class="container">
+                <h2 class="section__title">Mūsų tikslas</h2>
+                <p class="section__text">Kaip ir kiekvienas nekilnojamo turto specialistas svajojate dirbti su
+                    būsto
+                    savininkais, auginti pastovių klientų bazę, aprodyti pirkėjams namus ir įgyvendinti jų svajones.
+                    Daugelis nekilnojamo turto agentų neatlieka šaltų skambučių ir tokiu būdu netenka daugybės klientų
+                    ir sandorių.
+                </p>
+                <p class="section__text">
+                    Tiek šaltieji skambučiai, tiek tikrasis susitikimas su klientais yra esminės jūsų pardavimo proceso
+                    dalys, tačiau jos apima skirtingus įgūdžius ir praktiką. Ne paslaptis, kad skambinimas nepažystamam
+                    asmeniui ir bandymas įsiūlyti savo paslaugas yra sudėtingiausia bet kurio pardavimų proceso dalis.
+                    Tai gali atnešti neįtikėtinų rezultatų, tačiau reikia stebėtino atkaklumo, norint įveikti neigiamus
+                    klientų atsakymus, kad surastumėte tinkamus potencialius klientus su kuriais galėtumėte susitikti
+                    asmeniškai. Tikėkite ar ne tie patys veržlūs šaltų skambučių profesionalai gali bijoti tiesioginio
+                    bendravimo ir susitikimo, priešingai nei jūs naudojatės ir džiaugiatės tokiomis galimybėmis
+                    susitikti
+                    su potencialiu klientu asmeniškai. Skambinimo paslauga, kurią teikia Getcall yra pirmasis žingsnis
+                    užmezgant santykius su naujais klientais ir kuriant jūsų įvaizdį ir reputaciją.
+                </p>
+                <p class="section__text">
+                    Geras, gyvas pokalbis su tikru asmeniu yra žymiai pranašesnis už bet kokį marketingą internete. Mūsų
+                    tikslas padėti jums susieiti su būsto savininkais kurie pasirengę parduoti dabar!
+                </p>
+            </div>
+        </section>
+        <section class="results">
+            <div class="container">
+                <div class="results__wrapper">
+                    <div class="results__content">
+                        <h2 class="section__title">Rezultatų sekimas</h2>
+                        <p class="section__text">
+                            Rezultatų įvertinimas gali būti sudėtinga užduotis. Kad užduotys taptų lengvesnės turime
+                            sukūrę
+                            savo valdymo sistemą ir tvarkraščius, į kuriuos įtraukiame kuo daugiau duomenų, kad galėtume
+                            kuo
+                            tiksliau išmatuoti rezultatus.
+                        </p>
+                        <p class="section__text">
+                            Mes tikime skaidrumu ir sąžiningumu kas liečia rezultatus. Nuolat tyrinėjame, koreguojame,
+                            testuojame, tobuliname darbo procesus. Mes nuolat siekiame to 1% laimėjimo menkiausiuose
+                            dalykuose
+                            kurie ilgainiui atneš didelius ir ilgalaikius
+                            laimėjimus.
+                        </p>
+                    </div>
+                    <img src="assets/images/dashboard.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="values">
+            <div class="container">
+                <h2 class="section__title">Vertybės</h2>
+                <ul class="values__list">
+                    <li class="values__item">
+                        <img src="assets/images/values/ob1.svg" alt="">
+                        <h4 class="values__title">Sąžiningumas</h4>
+                        <p class="values__text">Pirmiausia rūpinamės kliento poreikiais, nes jeigu laimi klientas,
+                            laimime ir mes.</p>
+                    </li>
+                    <li class="values__item">
+                        <img src="assets/images/values/ob2.svg" alt="">
+                        <h4 class="values__title">Verslumas</h4>
+                        <p class="values__text">Stengiamės įžvelgti galimybes ir jomis pasinaudoti.</p>
+                    </li>
+                    <li class="values__item">
+                        <img src="assets/images/values/ob3.svg" alt="">
+                        <h4 class="values__title">Inovatyvumas</h4>
+                        <p class="values__text">Kartu su Jumis domimės nekilnojamojo turto naujovėmis.</p>
+                    </li>
+                    <li class="values__item">
+                        <img src="assets/images/values/ob4.svg" alt="">
+                        <h4 class="values__title">Bendradarbiavimas</h4>
+                        <p class="values__text">Pažanga yra greičiausia, kai specialistai ir klientas dirba išvien.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section__title">DUK</h2>
+                <ul class="faq__list">
+                    <li class="faq__item">
+                        <h5 class="faq__title">Kiek kainuoja mūsų paslaugos?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#131344" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </h5>
+                        <p class="faq__text">
+                            Turime kelis kainų modelius:
+                            <br>
+                            1 variantas: už vieną sėkmingą skambutį.
+                            <br>
+                            2 variantas: % už sėkmingai įgyvendintą sandorį.
+                            <br>
+                            3 variantas: pagal abipusį susitarimą.
+                            <br><br>
+                            Kaip matote nesiūlome apmokėjimų už darbo valandas ar bendrą skambučių skaičių kuomet jūs
+                            nepamatuosite kiek ir už ką tiksliai mokate. Siūlome aiškų ir konkretų apmokėjimą tik už
+                            rezultatus.
+                            Kiekvienas klientas yra skirtingas, todėl reikalauja kitokio požiūrio. Norėdami sužinoti kas
+                            tinka jums, tiesiog susisiekite.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h5 class="faq__title">Ar dirbate su visais norinčiais?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#131344" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </h5>
+                        <p class="faq__text">Nesame fabrikas, kepantis bandeles, kurių visiems užteks, todėl kruopščiai
+                            atsirenkame, su kuo dirbsime. Turime užtikrinti kokybę ir rezultatus. Mūsų klientai turi
+                            augti. Tam turime taisykles ir darbo principus, kurių laikomės.</p>
+                    </li>
+                    <li class="faq__item">
+                        <h5 class="faq__title">Kuo esate išskirtiniai?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#131344" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </h5>
+                        <p class="faq__text">Mes ne tik agentūra padėsianti pritraukti naujų klientų, esame jūsų
+                            partneriai. Kliento ir mūsų santykiai yra tokie pat svarbūs kaip ir skaičiai. Tikime, kad
+                            jeigu klientų vertybės tokios pačios kaip ir mūsų, partnerystė auga. Tikime pasitikėjimo,
+                            draugystės ir pagarbos kūrimu.
+                        </p>
+                    </li>
+                    <li class="faq__item">
+                        <h5 class="faq__title">Ar savo paslaugas teikiate ir po darbo valandų?
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M6 9L12 15L18 9" stroke="#131344" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </h5>
+                        <p class="faq__text">Taip, klietui pageidaujant dirbame ir po darbo valandų. </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="grow">
+            <div class="container">
+                <div class="grow__wrapper">
+                    <div class="grow__content">
+                        <h2 class="section__title">Esate pasiruošę augti kartu su mumis?</h2>
+                        <p class="section__text">Esame 100% orientuoti į rezultatus</p>
+                        <a href="https://calendly.com/getcall/getcall-konsultacija?month=2023-11" class="button">
+                            Užsiregistruoti konsultacijai
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_94_750)">
+                                    <path d="M0.75 9L14.25 9" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 14.25L14.25 9L9 3.75" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_94_750">
+                                        <rect width="18" height="18" fill="white" transform="matrix(-1 0 0 1 18 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="assets/images/10.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer__col">
+                    <div class="footer__content">
+                        <a href="/" class="footer__logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                            getcall
+                        </a>
+                        <p class="footer__text">Pirmiausia rūpinamės kliento poreikiais, nes jeigu laimi klientas,
+                            laimime ir mes.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav" id="footer__navigacija">
+                        <h5 class="footer__nav--title">Navigacija</h5>
+                        <ul class="footer__list">
+                            <li class="footer__list--item">
+                                <a href="#" class="footer__list--link" data-scroll="#hero">
+                                    Pagrindinis
+                                </a>
+                            </li>
+                            <li class="footer__list--item">
+                                <a href="tel:+370 668 33144" class="footer__list--link">
+                                    Susisiekite
+                                </a>
+                            </li>
+                            <li class="footer__list--item">
+                                <a href="/about.html" class="footer__list--link">
+                                    Apie mus
+                                </a>
+                            </li>
+                            <li class="footer__list--item">
+                                <a href="#" class="footer__list--link" data-scroll="#faq">
+                                    DUK
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer__nav" id="footer__kontaktai">
+                        <h5 class="footer__nav--title">Mūsų Kontaktai</h5>
+                        <ul class="footer__list">
+                            <li class="footer__list--item">
+                                <a href="mailto:info@getcall.lt" class="footer__list--link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.75708 2.5H12.2598C12.9473 2.5 13.5098 3.0625 13.5098 3.75V11.25C13.5098 11.9375 12.9473 12.5 12.2598 12.5H2.75708C2.06958 12.5 1.50708 11.9375 1.50708 11.25V3.75C1.50708 3.0625 2.06958 2.5 2.75708 2.5Z"
+                                            stroke="#131344" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.5 3.75L7.5 8.125L1.5 3.75" stroke="#131344" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    info@getcall.lt
+                                </a>
+                            </li>
+                            <li class="footer__list--item">
+                                <a href="tel:+370 668 33144" class="footer__list--link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.7499 10.575V12.45C13.7506 12.6241 13.7149 12.7964 13.6452 12.9558C13.5755 13.1153 13.4732 13.2585 13.3449 13.3762C13.2167 13.4938 13.0653 13.5834 12.9004 13.6392C12.7355 13.695 12.5608 13.7157 12.3874 13.7C10.4642 13.491 8.61677 12.8338 6.99365 11.7812C5.48354 10.8217 4.20323 9.54136 3.24365 8.03125C2.18738 6.40075 1.53005 4.54437 1.3249 2.6125C1.30928 2.43967 1.32982 2.26547 1.38521 2.10101C1.4406 1.93655 1.52963 1.78543 1.64663 1.65726C1.76362 1.5291 1.90603 1.42669 2.06477 1.35658C2.22351 1.28646 2.39511 1.25016 2.56865 1.25H4.44365C4.74696 1.24701 5.04102 1.35442 5.271 1.55221C5.50098 1.74999 5.6512 2.02465 5.69365 2.325C5.77279 2.92504 5.91955 3.5142 6.13115 4.08125C6.21524 4.30495 6.23344 4.54807 6.18359 4.7818C6.13374 5.01553 6.01794 5.23007 5.8499 5.4L5.05615 6.19375C5.94587 7.75847 7.24143 9.05403 8.80615 9.94375L9.5999 9.15C9.76983 8.98196 9.98437 8.86616 10.2181 8.81631C10.4518 8.76646 10.6949 8.78466 10.9186 8.86875C11.4857 9.08034 12.0749 9.22711 12.6749 9.30625C12.9785 9.34908 13.2558 9.502 13.454 9.73593C13.6522 9.96986 13.7575 10.2685 13.7499 10.575Z"
+                                            stroke="#131344" stroke-width="1.2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    +370 668 33144
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
+                <p class="copy__text">© 2023, Getcall. Visos teisės saugomos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
